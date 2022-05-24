@@ -1,5 +1,5 @@
 {
-  "name": "Kay4yK/laravel-clickhouse",
+  "name": "kay4yk/laravel-clickhouse",
   "description": "Eloquent model for ClickHouse",
   "type": "library",
   "license": "MIT",
