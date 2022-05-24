@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Bavix\LaravelClickHouse\Tests;
+namespace Kay4yk\LaravelClickHouse\Tests;
 
 class EloquentModelCastingTest extends EloquentModelTest
 {

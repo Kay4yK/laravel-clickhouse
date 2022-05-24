@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Bavix\LaravelClickHouse\Database;
+namespace Kay4yk\LaravelClickHouse\Database;
 
-use Bavix\LaravelClickHouse\Database\Query\Builder;
-use Bavix\LaravelClickHouse\Database\Query\Pdo;
+use Kay4yk\LaravelClickHouse\Database\Query\Builder;
+use Kay4yk\LaravelClickHouse\Database\Query\Pdo;
 use Tinderbox\ClickhouseBuilder\Query\Grammar;
 
 class Connection extends \Tinderbox\ClickhouseBuilder\Integrations\Laravel\Connection

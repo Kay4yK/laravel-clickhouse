@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Bavix\LaravelClickHouse\Tests;
+namespace Kay4yk\LaravelClickHouse\Tests;
 
-use Bavix\LaravelClickHouse\Database\Eloquent\Builder;
+use Kay4yk\LaravelClickHouse\Database\Eloquent\Builder;
 use Mockery\MockInterface;
 
 class EloquentModelWithTest extends EloquentModelTest

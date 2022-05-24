@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Bavix\LaravelClickHouse\Tests\Unit\Database\Query;
+namespace Kay4yk\LaravelClickHouse\Tests\Unit\Database\Query;
 
-use Bavix\LaravelClickHouse\Database\Connection;
-use Bavix\LaravelClickHouse\Database\Query\Builder;
-use Bavix\LaravelClickHouse\Tests\Helpers;
+use Kay4yk\LaravelClickHouse\Database\Connection;
+use Kay4yk\LaravelClickHouse\Database\Query\Builder;
+use Kay4yk\LaravelClickHouse\Tests\Helpers;
 use PHPUnit\Framework\TestCase;
 use Tinderbox\ClickhouseBuilder\Query\Enums\Format;
 use Tinderbox\ClickhouseBuilder\Query\Grammar;

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Bavix\LaravelClickHouse\Tests\Unit\Database\Eloquent;
+namespace Kay4yk\LaravelClickHouse\Tests\Unit\Database\Eloquent;
 
-use Bavix\LaravelClickHouse\Database\Connection;
-use Bavix\LaravelClickHouse\Database\Eloquent\Builder;
-use Bavix\LaravelClickHouse\Database\Eloquent\Collection;
-use Bavix\LaravelClickHouse\Database\Query\Builder as QueryBuilder;
-use Bavix\LaravelClickHouse\Tests\EloquentModelCastingTest;
-use Bavix\LaravelClickHouse\Tests\Helpers;
+use Kay4yk\LaravelClickHouse\Database\Connection;
+use Kay4yk\LaravelClickHouse\Database\Eloquent\Builder;
+use Kay4yk\LaravelClickHouse\Database\Eloquent\Collection;
+use Kay4yk\LaravelClickHouse\Database\Query\Builder as QueryBuilder;
+use Kay4yk\LaravelClickHouse\Tests\EloquentModelCastingTest;
+use Kay4yk\LaravelClickHouse\Tests\Helpers;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Mockery\Mock;

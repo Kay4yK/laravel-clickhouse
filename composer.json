@@ -18,24 +18,22 @@
     "infection/infection": "~0.15",
     "phpunit/phpunit": "^8.0|^9.0",
     "mockery/mockery": "^1.3",
-    "fakerphp/faker": "^1.9",
-    "bavix/clickhouse-php-client": "^3.0",
-    "bavix/clickhouse-builder": "^4.0"
+    "fakerphp/faker": "^1.9"
   },
   "autoload": {
     "psr-4": {
-      "Bavix\\LaravelClickHouse\\": "src/"
+      "Kay4yk\\LaravelClickHouse\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Bavix\\LaravelClickHouse\\Tests\\": "tests/"
+      "Kay4yk\\LaravelClickHouse\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Bavix\\LaravelClickHouse\\ClickHouseServiceProvider"
+        "Kay4yk\\LaravelClickHouse\\ClickHouseServiceProvider"
       ]
     }
   },
