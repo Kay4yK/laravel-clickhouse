@@ -508,17 +508,18 @@ class Builder
      * Paginate the given query.
      *
      * @param int|null $perPage
-     * @param array    $columns
-     * @param string   $pageName
+     * @param array $columns
+     * @param string $pageName
      * @param int|null $page
      *
      * @return LengthAwarePaginator
+     * @throws ClientException
      */
-    public function paginate(?int $perPage = null, $columns = ['*'], $pageName = 'page', $page = null): LengthAwarePaginator
+    public function paginate(?int $perPage = null, array $columns = ['*'], string $pageName = 'page', int $page = null): LengthAwarePaginator
     {
         $page = $page ?: Paginator::resolveCurrentPage($pageName);
         $perPage = $perPage ?: $this->model->getPerPage();
-        $results = ($total = $this->toBase()->getCountForPagination())
+        $results = ($total = $this->toBase()->count())
             ? $this->forPage($page, $perPage)->get($columns)
             : $this->model->newCollection();
 
@@ -526,6 +527,18 @@ class Builder
             'path'     => Paginator::resolveCurrentPath(),
             'pageName' => $pageName,
         ]);
+    }
+
+    /**
+     * Set the limit and offset for a given page.
+     *
+     * @param int $page
+     * @param int $perPage
+     * @return $this
+     */
+    public function forPage(int $page, int $perPage = 15): static
+    {
+        return $this->limit($perPage, $perPage * ($page - 1));
     }
 
     /**
